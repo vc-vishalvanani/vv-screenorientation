@@ -4,9 +4,6 @@ import type { VVScreenOrientationPlugin } from './definitions';
 
 const VVScreenOrientation = registerPlugin<VVScreenOrientationPlugin>(
   'VVScreenOrientation',
-  {
-    web: () => import('./web').then(m => new m.VVScreenOrientationWeb()),
-  },
 );
 
 export * from './definitions';
